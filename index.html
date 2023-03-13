@@ -3,120 +3,47 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bootstrap Profile Page</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-  <style>
-    body {
-      background: linear-gradient(to bottom, #333333, #000000);
-      color: white;
-    }
+  <title> My Profile Page</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="preconnect" href= "https://fonts.google.com">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;1,400&display=swap" rel="stylesheet">
 
-    body {
-      font-family: Georgia, sans-serif;
-    }
 
-    .skill-icon {
-      font-size: 2em;
-      margin-right: 10px;
-      color: #f2a900;
-    }
-    
-    .project-icon {
-      font-size: 2em;
-      margin-right: 10px;
-      color: #35b1fb;
-    }
-    
-    .btn-connect {
-      background-color: #35b1fb;
-      color: white;
-      border: none;
-      padding: 10px 20px;
-      border-radius: 5px;
-      font-size: 1.2em;
-      margin-top: 20px;
-    }
-    
-    .btn-connect:hover {
-      background-color: #1070a6;
-      cursor: pointer;
-    }
-    
-  </style>
 </head>
 <body>
-
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">Profile</a>
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-toggle="collapse"
-      data-target="#navbarNav"
-      aria-controls="navbarNav"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-
-  <div class="container my-4">
-    <div class="row">
-      <div class="col-md-4">
-        <img src="mypic.jfif" alt="Profile Picture" class="img-fluid rounded-circle">
-      </div>
-      <div class="col-md-8">
-        <h1 class="mb-0">Siddharth Rajesh Menon</h1>
+    <div class="hero">
+      <nav>
+       <h2 class="logo">Portf<span>olio</span> </h2> 
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Skills</a></li>
         
-        <p class="lead">Student of Amrita Vishwa Vidyapeetam pursuing Btech in Artificial Intelligence</p>
-        <p class="lead">Residing in Ernakulam,Kerala,India</p>
-        <hr>
-        <p class="lead">Dedicated person who can handle tasks efficiently and use creative approaches to solve problems, while effectively communicating with individuals or as a leader of a team along with being able to work toward the company's objective with full enthusiasm and strong work ethics.</p>
-      </div>
+        
+      </ul>
+      <a href="#" class="btn">Subscribe</a>
+      </nav>
     </div>
-  </div>
 
-  <div class="container">
-    <div class="row">
-      <div class="col-md-4">
-        <h2>Skills</h2>
-        <ul class="list-unstyled">
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JavaScript</li>
-          <li>Python</li>
-          <li>Matlab</li>
-          <li>Data analytics</li>
-        </ul>
-      </div>
-  
-      <div class="col-md-7">
-        <h2>Projects</h2>
-        <ul class="list-unstyled">
-          <li><a href="http://127.0.0.1:5500/asg4/photo%20gallery.html" target="_blank">Photo gallery</a></li>
-          <br>
-          <li><a href="http://127.0.0.1:5500/asg6/tic.html" target="_blank">Tic tac toe</a></li>
-          <br>
-          <li><a href="http://127.0.0.1:5500/asg4/photo%20gallery.html" target="_blank">Wordle</a></li>
-        </ul>
-      </div>
-      
-  
-  
+    <div class="content">
+      <h4>Hi guys, my name is</h4>
+      <h1>Siddharth <span>Rajesh</span> Menon</h1>
+      <h3>Currently pursuing my BTech in Artificial Intelligence from Amrita Vishwa Vidyapeetam,Kollam </h3>
+      <h2>My Projects
+      <li><a href="http://127.0.0.1:5500/asg4/photo%20gallery.html" target="_blank">Photo gallery</a></li>
+      <li><a href="http://127.0.0.1:5500/asg6/tic.html" target="_blank">Tic tac toe</a></li>
+      <li><a href="http://127.0.0.1:5500/asg6/wordle.html" target="_blank">Wordle</a></li>
+    </h2>
+      <br>
+    <div class="newslatter">
+
+    <form>
+      <input type="email" name="email" id="mail" placeholder="Enter your Email">
+      <input type="submit" name="submit" value="Start">
+    </form>
+    </div>
+    </div>  
   
 </body>
 </html>
