@@ -1,0 +1,402 @@
+
+
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC');
+
+body {
+    background-color: white;
+}
+
+
+.grid_main {
+  display: grid;
+  max-width: 296px;
+  margin: auto;
+  margin-top: 10%;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto auto;
+
+  grid-template-areas:
+    "header"
+    "normal"
+    "magic"
+    "AI";
+
+  background-color: white;
+}
+
+.grid_main .header {
+  grid-area: header;
+  justify-self: center;
+}
+
+.grid_main h1 {
+  margin: 0 auto;
+  margin-bottom: 2.5%;
+  border-bottom: 1px solid black;
+  text-align: center;
+  padding: 20px 0 20px 0;
+  font-family: 'Amatic SC', cursive;
+  color: black;
+  font-size: 30pt;
+  font-weight: 700;
+}
+
+.grid_main .normal {
+  grid-area: normal;
+  justify-self: center;
+}
+
+.grid_main .magicBoard {
+  grid-area: magic;
+  justify-self: center;
+}
+
+.grid_main .vsAI {
+  grid-area: AI;
+  justify-self: center;
+}
+
+.grid_main a {
+  text-decoration: none;
+  font-family: 'Amatic SC', cursive;
+  color: black;
+  margin: 2.5% auto;
+  font-size: 25pt;
+  font-weight: 400;
+}
+
+.grid_main a:hover {
+  font-weight: 700;
+}
+
+.grid_AI_setup {
+  display: none;
+  max-width: 296px;
+  margin: auto;
+  margin-top: 10%;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto auto;
+
+  grid-template-areas:
+    "header"
+    "beginner"
+    "amateur"
+    "master";
+
+  background-color: white;
+}
+
+.grid_AI_setup .header {
+  grid-area: header;
+  justify-self: center;
+}
+
+.grid_AI_setup h1 {
+  margin: 0 auto;
+  margin-bottom: 2.5%;
+  border-bottom: 1px solid black;
+  text-align: center;
+  padding: 20px 0 20px 0;
+  font-family: 'Amatic SC', cursive;
+  color: black;
+  font-size: 30pt;
+  font-weight: 700;
+}
+
+.grid_AI_setup .beginner {
+  grid-area: beginner;
+  justify-self: center;
+}
+
+.grid_AI_setup .amateur {
+  grid-area: amateur;
+  justify-self: center;
+}
+
+.grid_AI_setup .master {
+  grid-area: master;
+  justify-self: center;
+}
+
+.grid_AI_setup a {
+  text-decoration: none;
+  font-family: 'Amatic SC', cursive;
+  color: black;
+  margin: 2.5% auto;
+  font-size: 25pt;
+  font-weight: 400;
+}
+
+.grid_AI_setup a:hover {
+  font-weight: 700;
+}
+
+.grid_normal {
+  max-width: 296px;
+  margin: auto;
+  display: none;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto auto;
+
+  grid-template-areas:
+    "heading heading"
+    "message message"
+    "table table"
+    "back startOver";
+
+  background-color: white;
+}
+
+.grid_AI {
+  max-width: 296px;
+  margin: auto;
+  display: none;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto auto;
+
+  grid-template-areas:
+    "heading heading"
+    "message message"
+    "table table"
+    "back startOver";
+
+  background-color: white;
+}
+
+.grid_magic {
+  max-width: 296px;
+  margin: auto;
+  display: none;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto auto;
+
+  grid-template-areas:
+    "heading heading"
+    "message message"
+    "table table"
+    "back startOver";
+
+  background-color: white;
+}
+
+.grid_normal .heading {
+  grid-area: heading;
+  justify-self: center;
+}
+
+.grid_AI .heading {
+  grid-area: heading;
+  justify-self: center;
+}
+
+.grid_magic .heading {
+  grid-area: heading;
+  justify-self: center;
+}
+
+.grid_normal .message {
+  grid-area: message;
+  margin-left: 1.5%;
+}
+
+.grid_AI .message {
+  grid-area: message;
+  margin-left: 1.5%;
+}
+
+.grid_magic .message {
+  grid-area: message;
+  margin-left: 2.5%;
+}
+
+.grid_normal .table {
+  grid-area: table;
+  justify-self: center;
+}
+
+.grid_AI .table {
+  grid-area: table;
+  justify-self: center;
+}
+
+.grid_magic .table {
+  grid-area: table;
+  justify-self: center;
+}
+
+.grid_normal .back {
+  grid-area: back;
+  justify-self: left;
+  margin-left: 2.5%;
+}
+
+.grid_AI .back {
+  grid-area: back;
+  justify-self: left;
+  margin-left: 2.5%;
+}
+
+.grid_magic .back {
+  grid-area: back;
+  justify-self: left;
+  margin-left: 3.5%;
+}
+
+.grid_normal .startOver {
+  grid-area: startOver;
+  justify-self: right;
+  margin-right: 2.5%;
+}
+
+.grid_AI .startOver {
+  grid-area: startOver;
+  justify-self: right;
+  margin-right: 2.5%;
+}
+
+.grid_magic .startOver {
+  grid-area: startOver;
+  justify-self: right;
+  margin-right: 3.5%;
+}
+
+.grid_normal .square {
+  width: 90px;
+  height: 90px;
+  font-family: 'Comfortaa', serif;
+  font-size: 40pt;
+  text-align: center;
+}
+
+.grid_AI .square {
+  width: 90px;
+  height: 90px;
+  font-family: 'Comfortaa', serif;
+  font-size: 40pt;
+  text-align: center;
+}
+
+.grid_normal .square {
+  width: 90px;
+  height: 90px;
+  font-family: 'Comfortaa', serif;
+  font-size: 40pt;
+  text-align: center;
+}
+
+.grid_magic .square {
+  width: 65px;
+  height: 65px;
+  font-family: 'Comfortaa', serif;
+  font-size: 30pt;
+  text-align: center;
+}
+
+/* Styling elements */
+.grid_normal h1 {
+  margin: 0 auto;
+  margin-bottom: 2.5%;
+  text-align: center;
+  padding: 20px 0 20px 0;
+  font-family: 'Amatic SC', cursive;
+  color: black;
+  font-size: 20pt;
+  font-weight: 400;
+}
+
+.grid_normal h1 span {
+  font-weight: 700;
+}
+
+.grid_normal h2{
+  font-family: 'Amatic SC', cursive;
+  color: black;
+  font-size: 20pt;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.grid_normal a {
+  text-decoration: none;
+  font-family: 'Amatic SC', cursive;
+  color: black;
+  margin-top: 5%;
+  font-size: 20pt;
+}
+
+.grid_normal a:hover {
+  text-decoration: underline;
+}
+
+.grid_AI h1 {
+  margin: 0 auto;
+  margin-bottom: 2.5%;
+  text-align: center;
+  padding: 20px 0 20px 0;
+  font-family: 'Amatic SC', cursive;
+  color: black;
+  font-size: 20pt;
+  font-weight: 400;
+}
+
+.grid_AI h1 span {
+  font-weight: 700;
+}
+
+.grid_AI h2{
+  font-family: 'Amatic SC', cursive;
+  color: black;
+  font-size: 20pt;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.grid_AI a {
+  text-decoration: none;
+  font-family: 'Amatic SC', cursive;
+  color: black;
+  margin-top: 5%;
+  font-size: 20pt;
+}
+
+.grid_AI a:hover {
+  text-decoration: underline;
+}
+
+.grid_magic h1 {
+  margin: 0 auto;
+  margin-bottom: 2.5%;
+  text-align: center;
+  padding: 20px 0 20px 0;
+  font-family: 'Amatic SC', cursive;
+  color: black;
+  font-size: 18pt;
+  font-weight: 400;
+}
+
+.grid_magic h1 span {
+  font-weight: 700;
+}
+
+.grid_magic h2{
+  font-family: 'Amatic SC', cursive;
+  color: black;
+  font-size: 20pt;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.grid_magic a {
+  text-decoration: none;
+  font-family: 'Amatic SC', cursive;
+  color: black;
+  margin-top: 5%;
+  font-size: 20pt;
+}
+
+.grid_magic a:hover {
+  text-decoration: underline;
+}

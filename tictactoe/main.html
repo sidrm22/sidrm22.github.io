@@ -1,0 +1,144 @@
+<html>
+
+  <head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe game!</title>
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+    <link rel="stylesheet" href="tictactoe.css">
+
+  </head>
+
+  <body>
+
+
+    <div class="grid_main" id="grid_main">
+      <h1 class="header">LET'S PLAY!</h1>
+      <a href="javascript: P1vsP2();" id="normal" class="normal">NORMAL</a>
+      <a href="javascript: magicBoard();" id="magicBoard" class="magicBoard">MAGIC BOARD</a>
+      <a href="javascript: selectDifficulty();" id="vsAI" class="vsAI">PLAY VS AI</a>
+    </div>
+    
+    <div class="grid_AI_setup" id="grid_AI_setup">
+      <h1 class="header">SELECT DIFFICULTY</h1>
+      <a href="javascript: vsAInoob();" id="beginner" class="beginner">BEGINNER</a>
+      <a href="javascript: vsAImiddle();" id="amatuer" class="amateur">AMATEUR</a>
+      <a href="javascript: vsAI();" id="master" class="master">MASTER</a>
+    </div>
+
+
+
+    <div class="grid_normal" id="grid_normal">
+      <h1 class="heading"><span id="player1">Player1</span> vs <span id="player2">Player2</span></h1>
+
+      <h2 class="message" id="message"></h2>
+
+      <table class="table" border="1">
+
+        <tr>
+          <td class="square" id="tile1" onClick="update(this)"></td>
+          <td class="square" id="tile2" onClick="update(this)"></td>
+          <td class="square" id="tile3" onClick="update(this)"></td>
+        </tr>
+
+        <tr>
+          <td class="square" id="tile4" onClick="update(this)"></td>
+          <td class="square" id="tile5" onClick="update(this)"></td>
+          <td class="square" id="tile6" onClick="update(this)"></td>
+        </tr>
+
+        <tr>
+          <td class="square" id="tile7" onClick="update(this)"></td>
+          <td class="square" id="tile8" onClick="update(this)"></td>
+          <td class="square" id="tile9" onClick="update(this)"></td>
+        </tr>
+
+      </table>
+
+      <a href="javascript: back();" id="back" class="back">Back</a>
+      <a href="javascript: startGame();" id="start_over" class="startOver">Start over!</a>
+    </div>
+   
+    
+    
+    <div class="grid_AI" id="grid_AI">
+    <h1 class="heading"><span id="player_name">Player1</span> vs <span>Computer</span></h1>
+
+    <h2 class="message" id="messageAI"></h2>
+
+    <table class="table" border="1">
+
+      <tr>
+        <td class="square" id="tileAI0-0" onClick="updateAI(this, 0, 0)"></td>
+        <td class="square" id="tileAI0-1" onClick="updateAI(this, 0, 1)"></td>
+        <td class="square" id="tileAI0-2" onClick="updateAI(this, 0, 2)"></td>
+      </tr>
+
+      <tr>
+        <td class="square" id="tileAI1-0" onClick="updateAI(this, 1, 0)"></td>
+        <td class="square" id="tileAI1-1" onClick="updateAI(this, 1, 1)"></td>
+        <td class="square" id="tileAI1-2" onClick="updateAI(this, 1, 2)"></td>
+      </tr>
+
+      <tr>
+        <td class="square" id="tileAI2-0" onClick="updateAI(this, 2, 0)"></td>
+        <td class="square" id="tileAI2-1" onClick="updateAI(this, 2, 1)"></td>
+        <td class="square" id="tileAI2-2" onClick="updateAI(this, 2, 2)"></td>
+      </tr>
+
+    </table>
+
+    <a href="javascript: backAI()" id="backAI" class="back">Back</a>
+    <a href="javascript: startGameAI();" id="start_overAI" class="startOver">Start over!</a>
+  </div>
+
+
+    <div class="grid_magic" id="grid_magic">
+      <h1 class="heading"><span id="magic1">Player1</span> vs <span id="magic2">Player2</span> vs <span id="magic3">Player3</span></h1>
+
+      <h2 class="message" id="magicMessage"></h2>
+
+      <table class="table" border="1">
+
+        <tr>
+          <td class="square" id="magictile1" onClick="updateMagic(this)"></td>
+          <td class="square" id="magictile2" onClick="updateMagic(this)"></td>
+          <td class="square" id="magictile3" onClick="updateMagic(this)"></td>
+          <td class="square" id="magictile4" onClick="updateMagic(this)"></td>
+        </tr>
+
+        <tr>
+          <td class="square" id="magictile5" onClick="updateMagic(this)"></td>
+          <td class="square" id="magictile6" onClick="updateMagic(this)"></td>
+          <td class="square" id="magictile7" onClick="updateMagic(this)"></td>
+          <td class="square" id="magictile8" onClick="updateMagic(this)"></td>
+        </tr>
+
+        <tr>
+          <td class="square" id="magictile9" onClick="updateMagic(this)"></td>
+          <td class="square" id="magictile10" onClick="updateMagic(this)"></td>
+          <td class="square" id="magictile11" onClick="updateMagic(this)"></td>
+          <td class="square" id="magictile12" onClick="updateMagic(this)"></td>
+        </tr>
+
+        <tr>
+          <td class="square" id="magictile13" onClick="updateMagic(this)"></td>
+          <td class="square" id="magictile14" onClick="updateMagic(this)"></td>
+          <td class="square" id="magictile15" onClick="updateMagic(this)"></td>
+          <td class="square" id="magictile16" onClick="updateMagic(this)"></td>
+        </tr>
+
+      </table>
+
+      <a href="javascript: backMagic();" id="back" class="back">Back</a>
+      <a href="javascript: magicStartGame();" id="start_over" class="startOver">Start over!</a>
+    </div>
+    
+   
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+    <script src="tictactoe.js"></script>
+  </body>
+
+</html>
